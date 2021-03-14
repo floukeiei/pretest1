@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="col1">
+        <input type="number" #input [(ngModel)]="num">
+    </div>
+    <div class="col2">
+        <select  id="type" #typeselect [(ngModel)]="type">
+            <option value="isPrime">isPrime</option>
+            <option value="isFibonacci">isFibonacci</option>
+          </select>
+    </div>
+    <div class="col3">
+        {{ result$ | async }}
+    </div>
+</div>
